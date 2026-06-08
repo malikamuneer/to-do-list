@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header>
+        <div class="title">
+          <div class="logo">✅</div>
+          <h2>My Tasks</h2>
+        </div>
+        <label class="toggle">
+          Dark
+          <div class="switch">
+            <input type="checkbox" id="darkToggle" />
+            <span class="slider"></span>
+          </div>
+        </label>
+      </header>
+
+      <!-- Input Row -->
+      <div class="row">
+        <div class="field">
+          <input type="text" id="taskInput" placeholder="Enter a new task..." />
+        </div>
+        <button class="btn btn-primary" id="addBtn">Add</button>
+      </div>
+
+      <!-- Task List -->
+      <ul id="taskList">
+        <li class="empty">No tasks yet ✨</li>
+      </ul>
+
+      <!-- Footer -->
+      <footer>
+        <span id="taskCount">0 tasks</span>
+        <div class="filters">
+          <span class="chip active" data-filter="all">All</span>
+          <span class="chip" data-filter="active">Active</span>
+          <span class="chip" data-filter="completed">Completed</span>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
